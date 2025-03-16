@@ -1,0 +1,22 @@
+GET http://localhost:5000/users
+
+###
+POST http://localhost:5000/add-users
+Content-Type: application/json
+
+{
+    "Judul": "bjir",
+    "Catatan": "bjir@gmail.com"
+}
+
+###
+PUT http://localhost:5000/edit-users/3
+Content-Type: application/json
+
+{
+    "Judul": "Secercah harapan",
+    "Catatan": "haloo saya novan"
+}
+
+###
+DELETE  http://localhost:5000/delete-users/3
